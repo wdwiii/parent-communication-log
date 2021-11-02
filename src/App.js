@@ -6,10 +6,12 @@ function App() {
 
   return (
     <div>
+      <h1 style={{ 'font-size': '24px', 'text-align': 'center' }}>
+        Parent Communication Log
+      </h1>
       <ContactForm items={logData} />
     </div>
   );
 }
 
 export default App;
-imp;
