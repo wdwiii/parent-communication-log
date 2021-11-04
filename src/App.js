@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ContactForm from './ContactForm';
+import ContactForm from './components/ContactForm/ContactForm';
 
 function App() {
   const [logData, setLogData] = useState([]);
