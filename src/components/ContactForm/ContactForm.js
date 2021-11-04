@@ -12,22 +12,22 @@ const ContactForm = (props) => {
       className={styles['contact-form']}
       onSubmit={logContactHandler}
     >
-      <label htmlFor="form__fname">
+      <label>
         First Name:
         <input type="text" id="form__fname" placeholder="Willie" />
       </label>
       {/* ============================ */}
-      <label htmlFor="form__lname">
+      <label>
         Last Name:
         <input type="text" id="form__lname" placeholder="Whitfield" />
       </label>
       {/* ============================ */}
-      <label htmlFor="form__id">
+      <label>
         Student ID:
         <input type="number" id="form__id" placeholder="1234567" />
       </label>
       {/* ============================ */}
-      <label htmlFor="form__grade">
+      <label>
         Grade:
         <select id="form__grade" name="grade">
           <option value="09">09</option>
@@ -37,17 +37,17 @@ const ContactForm = (props) => {
         </select>
       </label>
       {/* ============================ */}
-      <label htmlFor="form__date">
+      <label>
         Date:
         <input type="date" id="form__date" />
       </label>
       {/* ============================ */}
-      <label htmlFor="form__time">
+      <label>
         Time:
         <input type="time" id="form__time" />
       </label>
       {/* ============================ */}
-      <label htmlFor="form__fname">
+      <label>
         Person Contacted:
         <input
           type="text"
@@ -56,7 +56,7 @@ const ContactForm = (props) => {
         />
       </label>
       {/* ============================ */}
-      <label htmlFor="form__method">
+      <label>
         Method of Contact:
         <select id="form__grade" name="method">
           <option value="email">Email</option>
@@ -70,7 +70,7 @@ const ContactForm = (props) => {
         </select>
       </label>
       {/* ============================ */}
-      <label htmlFor="form__reason">
+      <label>
         Reason for Call:
         <input type="textarea" id="form__reason" placeholder="Optional" />
       </label>
