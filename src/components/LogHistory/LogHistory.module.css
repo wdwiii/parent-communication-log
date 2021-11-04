@@ -1,3 +1,4 @@
-.log-history__list {
+.log__history {
   list-style: none;
+  padding: 0;
 }
