@@ -1,18 +1,19 @@
 import styles from './LogHistory.module.css';
 import Card from '../UI/Card';
+import LogItem from './LogItem';
 
 const LogHistory = (props) => {
-  const testData = ['test 1', 'test 2', 'test 3'];
-
-  const loggedItems = testData.map((logItem) => {
-    return <li className={styles['log-history__item']}>{logItem}</li>;
+  const loggedItems = props.items.map((logItem) => {
+    return <LogItem item={logItem} />;
   });
 
   return (
-    <Card>
-      <h1>Recent Logs:</h1>
-      <ul className={styles['log-history__list']}>{loggedItems}</ul>
-    </Card>
+    <section className="log" style={{ 'margin-block': '5rem' }}>
+      <Card background={'lightblue'}>
+        <h1>Recent Logs:</h1>
+        <ul className={styles['log__history']}>{loggedItems}</ul>
+      </Card>
+    </section>
   );
 };
 
