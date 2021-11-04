@@ -1,0 +1,8 @@
+.log__item {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.log__item ul {
+  list-style: none;
+}
