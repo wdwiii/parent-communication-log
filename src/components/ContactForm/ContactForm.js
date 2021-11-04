@@ -9,13 +9,13 @@ const ContactForm = (props) => {
   };
 
   return (
-    <Card>
+    <Card background={'lightblue'}>
       <form
         action=""
         className={styles['contact-form']}
         onSubmit={logContactHandler}
       >
-        <div style={{ 'padding-top': '2.5rem' }}>
+        <div style={{ width: '100%' }}>
           <label>
             First Name:
             <input type="text" id="form__fname" placeholder="Willie" />
