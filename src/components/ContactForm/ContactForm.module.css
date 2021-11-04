@@ -1,5 +1,4 @@
 .contact-form {
-  background-color: #ebebeb;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -16,11 +15,16 @@
 }
 
 .contact-form label {
+  background-color: lightblue;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
-  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 550px;
+  padding: 20px;
+  width: 80%;
 }
 
 /* ============================== */
