@@ -20,7 +20,8 @@ function App() {
       grade: '12',
       personContacted: 'Monica Wallace',
       method: 'Email',
-      concern: 'Received from other students of Angela verbally harassing them',
+      concern:
+        'Received complaints from other students of Angela verbally harassing them',
     },
   ]);
 
