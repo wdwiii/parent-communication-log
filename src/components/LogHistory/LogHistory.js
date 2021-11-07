@@ -1,5 +1,4 @@
 import styles from './LogHistory.module.css';
-import Card from '../UI/Card';
 import LogItem from './LogItem';
 
 const LogHistory = (props) => {
@@ -9,10 +8,18 @@ const LogHistory = (props) => {
 
   return (
     <section className="log" style={{ 'margin-block': '5rem' }}>
-      <Card background={'lightblue'}>
-        <h1>Recent Logs:</h1>
-        <ul className={styles['log__history']}>{loggedItems}</ul>
-      </Card>
+      <table>
+        <tr>
+          <th>Student</th>
+          <th>Student ID</th>
+          <th>Grade</th>
+          <th>Date</th>
+          <th>Contact</th>
+          <th>Method</th>
+          <th>Concern</th>
+        </tr>
+        {loggedItems}
+      </table>
     </section>
   );
 };
