@@ -5,18 +5,18 @@ import LogHistory from './components/LogHistory/LogHistory';
 function App() {
   const [testData, setTestData] = useState([
     {
-      firstname: 'Bobby',
-      lastname: 'Johnson',
-      studentid: '0233459',
+      firstName: 'Bobby',
+      lastName: 'Johnson',
+      studentId: '0233459',
       grade: '09',
       personContacted: 'James Johnson',
       method: 'Phone',
       concern: 'Bobby did not attend class for the sixth time in eight days.',
     },
     {
-      firstname: 'Angela',
-      lastname: 'Davis',
-      studentid: '0456342',
+      firstName: 'Angela',
+      lastName: 'Davis',
+      studentId: '0456342',
       grade: '12',
       personContacted: 'Monica Wallace',
       method: 'Email',
