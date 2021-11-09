@@ -62,9 +62,7 @@ const ContactForm = (props) => {
             placeholder="Optional"
           />
         </div>
-        <Button type="submit" background="rgb(0, 0, 82)">
-          Submit
-        </Button>
+        <Button type="submit">Submit</Button>
       </form>
     </Card>
   );
