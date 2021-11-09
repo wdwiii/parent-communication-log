@@ -1,4 +1,27 @@
-.log__history {
-  list-style: none;
-  padding: 0;
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: white;
+}
+
+tr:nth-of-type(even) {
+  background: rgb(181, 181, 181);
+}
+
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+td,
+th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
