@@ -1,13 +1,15 @@
-import styled from 'styled-components';
+import styles from './Button.module.css';
 
-const Button = styled.button`
-  background: ${(props) => props.background};
-  border-radius: 1rem;
-  color: #ebebeb;
-  font-size: 2.2rem;
-  margin-block: 2.5rem;
-  padding: 2rem;
-  width: 25rem;
-`;
+const Button = (props) => {
+  return (
+    <button
+      className={`${styles.button} ${props.className}`}
+      type={props.type || 'button'}
+      onClick={props.onClick}
+    >
+      {props.children}
+    </button>
+  );
+};
 
 export default Button;
