@@ -3,7 +3,7 @@ import Card from '../UI/Card';
 
 const LogItem = (props) => {
   return (
-    <tr>
+    <tr key={props.item.studentId}>
       <td>
         {props.item.lastName}, {props.item.firstName}
       </td>
