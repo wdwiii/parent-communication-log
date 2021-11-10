@@ -1,4 +1,4 @@
-import styles from './LogHistory.module.css';
+import './LogHistory.module.css';
 import LogItem from './LogItem';
 
 const LogHistory = (props) => {
