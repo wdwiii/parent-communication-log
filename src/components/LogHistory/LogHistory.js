@@ -9,7 +9,7 @@ const LogHistory = (props) => {
   return (
     <section className="log" style={{ 'margin-block': '5rem' }}>
       <table>
-        <tbody>
+        <thead>
           <tr>
             <th>Student</th>
             <th>Student ID</th>
@@ -19,8 +19,8 @@ const LogHistory = (props) => {
             <th>Method</th>
             <th>Concern</th>
           </tr>
-          {loggedItems}
-        </tbody>
+        </thead>
+        <tbody>{loggedItems}</tbody>
       </table>
     </section>
   );
