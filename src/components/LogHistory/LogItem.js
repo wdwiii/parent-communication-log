@@ -1,5 +1,4 @@
-import styles from './LogItem.module.css';
-import Card from '../UI/Card';
+import './LogItem.module.css';
 
 const LogItem = (props) => {
   return (
@@ -9,7 +8,11 @@ const LogItem = (props) => {
       </td>
       <td>{props.item.studentId}</td>
       <td>{props.item.grade}</td>
-      <td>{props.item.date}</td>
+      <td>
+        {props.item.date}
+        <br></br>
+        {props.item.time}
+      </td>
       <td>{props.item.personContacted}</td>
       <td>{props.item.method}</td>
       <td>{props.item.concern}</td>
