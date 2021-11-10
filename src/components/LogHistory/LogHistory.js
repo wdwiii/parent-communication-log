@@ -9,16 +9,18 @@ const LogHistory = (props) => {
   return (
     <section className="log" style={{ 'margin-block': '5rem' }}>
       <table>
-        <tr>
-          <th>Student</th>
-          <th>Student ID</th>
-          <th>Grade</th>
-          <th>Date</th>
-          <th>Contact</th>
-          <th>Method</th>
-          <th>Concern</th>
-        </tr>
-        {loggedItems}
+        <tbody>
+          <tr>
+            <th>Student</th>
+            <th>Student ID</th>
+            <th>Grade</th>
+            <th>Date</th>
+            <th>Contact</th>
+            <th>Method</th>
+            <th>Concern</th>
+          </tr>
+          {loggedItems}
+        </tbody>
       </table>
     </section>
   );
