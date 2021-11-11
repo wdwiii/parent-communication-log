@@ -4,7 +4,6 @@ const Card = styled.div`
   background: ${(props) => props.background};
   border-radius: 10px;
   margin: 0 auto;
-  padding: 1rem;
   width: 90%;
 `;
 
