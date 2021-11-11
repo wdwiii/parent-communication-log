@@ -108,7 +108,7 @@ const ContactForm = (props) => {
 
   return (
     <div>
-      {/* <ErrorModal title="Error" message="Something is wrong" /> */}
+      <ErrorModal title="Error" message="Something is wrong" />
       <Card background={'lightblue'}>
         <form className={styles['contact-form']} onSubmit={submitHandler}>
           <div style={{ width: '100%' }}>
