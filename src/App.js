@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ContactForm from './components/ContactForm/ContactForm';
-import LogHistory from './components/LogHistory/LogHistory';
+import Form from './components/Form/Form';
+import LogTable from './components/LogTable/LogTable';
 
 function App() {
   const [logsData, setLogsData] = useState([
@@ -62,8 +62,8 @@ function App() {
       <h1 style={{ 'font-size': '24px', 'text-align': 'center' }}>
         Parent Communication Log
       </h1>
-      <ContactForm onSaveLogData={addLogData} />
-      <LogHistory items={logsData} />
+      <Form onSaveLogData={addLogData} />
+      <LogTable items={logsData} />
     </div>
   );
 }
