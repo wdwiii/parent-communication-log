@@ -1,7 +1,7 @@
-import './LogHistory.module.css';
+import './LogTable.module.css';
 import LogItem from './LogItem';
 
-const LogHistory = (props) => {
+const LogTable = (props) => {
   const loggedItems = props.items.map((logItem) => {
     return <LogItem item={logItem} />;
   });
@@ -26,4 +26,4 @@ const LogHistory = (props) => {
   );
 };
 
-export default LogHistory;
+export default LogTable;
