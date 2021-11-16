@@ -1,4 +1,43 @@
+.form__inputs * {
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.form__subheading {
+  font-size: 1.4rem;
+  margin-block: 1rem;
+}
+
+.form__inputs {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+}
+
+.form__input {
+  padding: 0.5rem;
+  margin-block: 0.5rem;
+  border: 0;
+  border-bottom: 1px solid rgb(55, 55, 55);
+  /* border-radius: 5px; */
+}
+
+.form__label {
+  font-size: 1.2rem;
+}
+
+:not(h3) + .form__label {
+  margin-top: 1rem;
+}
+
 /* Error messages */
 .form__inputs p {
   color: red;
+  margin-bottom: 0.5rem;
 }
