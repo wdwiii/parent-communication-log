@@ -103,6 +103,7 @@ const Form = (props) => {
       <Card background={'lightblue'}>
         <form className={styles['form']} onSubmit={handleSubmit}>
           <div className={styles['form__inputs']}>
+            <h3 className={styles['form__subheading']}>Student Information</h3>
             <label className={styles['form__label']} htmlFor="firstName">
               First Name:
             </label>
@@ -149,7 +150,7 @@ const Form = (props) => {
               Grade:
             </label>
             <select
-              className={styles['form__inputs']}
+              className={styles['form__input']}
               id="grade"
               name="grade"
               value={values.grade}
@@ -163,6 +164,7 @@ const Form = (props) => {
             </select>
             {errors.grade && <p>{errors.grade}</p>}
             {/* ============================ */}
+            <h3 className={styles['form__subheading']}>Time of Contact</h3>
             <label className={styles['form__label']} htmlFor="date">
               Date:
             </label>
@@ -189,6 +191,7 @@ const Form = (props) => {
             />
             {errors.time && <p>{errors.time}</p>}
             {/* ============================ */}
+            <h3 className={styles['form__subheading']}>Contact Information</h3>
             <label className={styles['form__label']} htmlFor="personContacted">
               Person Contacted:
             </label>
@@ -207,7 +210,7 @@ const Form = (props) => {
               Method of Contact:
             </label>
             <select
-              className={styles['form__inputs']}
+              className={styles['form__input']}
               id="method"
               name="method"
               value={values.method}
