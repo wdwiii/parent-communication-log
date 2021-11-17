@@ -1,27 +1,104 @@
 /* 
 Generic Styling, for Desktops/Laptops 
 */
-table {
-  width: 100%;
+.table {
   border-collapse: collapse;
-}
-/* Zebra striping */
-tr:nth-of-type(odd) {
-  background: white;
-}
-
-tr:nth-of-type(even) {
-  background: rgb(181, 181, 181);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0.5rem 0.5rem 2rem rgb(61, 61, 61);
+  font-size: 1.2rem;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 90%;
 }
 
-th {
-  background: #333;
+.table thead tr {
+  background-color: rgb(109, 0, 163);
   color: white;
   font-weight: bold;
 }
-td,
-th {
-  padding: 6px;
-  border: 1px solid #ccc;
+
+.table th,
+.table td {
+  padding: 1.2rem 1.5rem;
   text-align: left;
+  border: none;
+}
+
+.table tbody tr {
+  background-color: white;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: rgb(243, 243, 243);
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(109, 0, 163);
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /* Label the data */
+  td:nth-of-type(1):before {
+    content: 'Student Name';
+  }
+  td:nth-of-type(2):before {
+    content: 'Student ID';
+  }
+  td:nth-of-type(3):before {
+    content: 'Grade';
+  }
+  td:nth-of-type(4):before {
+    content: 'Date of Contact';
+  }
+  td:nth-of-type(5):before {
+    content: 'Person Contacted';
+  }
+  td:nth-of-type(6):before {
+    content: 'Method of Contact';
+  }
+  td:nth-of-type(7):before {
+    content: 'Concern';
+  }
 }
