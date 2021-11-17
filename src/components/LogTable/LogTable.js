@@ -1,4 +1,4 @@
-import './LogTable.module.css';
+import styles from './LogTable.module.css';
 import LogItem from './LogItem';
 
 const LogTable = (props) => {
@@ -7,8 +7,8 @@ const LogTable = (props) => {
   });
 
   return (
-    <section className="log" style={{ 'margin-block': '5rem' }}>
-      <table>
+    <section className={styles.log} style={{ 'margin-block': '5rem' }}>
+      <table className={styles.table}>
         <thead>
           <tr>
             <th>Student</th>
